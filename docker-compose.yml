@@ -1,0 +1,56 @@
+version: '2.4'
+
+services:
+  kosmtik:
+    image: kosmtik:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/openstreetmap-carto
+      - openstreetmap-data:${PGDATA}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${KOSMTIKPORT}"
+    env_file:
+      - ${PROJECTENV}
+  db:
+    image: db:v12-3.0
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    ports:
+      - "${PGPORT}"
+    env_file:
+      - ${PROJECTENV}
+    sysctls:
+      kernel.shmmax: ${PGSHMMAX}
+    volumes:
+      - openstreetmap-data:${PGDATA}      
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5      
+  import:
+    image: import:v12-3.0
+    build:
+      context: .
+      dockerfile: Dockerfile.import
+    volumes:
+      - .:/openstreetmap-carto
+      - openstreetmap-data:${PGDATA}      
+    depends_on:
+      db:
+        condition: service_healthy      
+    env_file:
+      - ${PROJECTENV}    
+    sysctls:
+      kernel.shmmax: ${PGSHMMAX}
+
+volumes:
+  openstreetmap-data:
+    external:
+      name: ${PGVOLUME}
