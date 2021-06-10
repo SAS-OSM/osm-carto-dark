@@ -50,12 +50,6 @@ Stylesheet:
   - style/admin.mss
   - style/addressing.mss
 Layer:
-  - id: coastlines
-    geometry: linestring
-    <<: *extents
-    Datasource:
-      file: data/coastlines-split-3857/lines.shp
-      type: shape
   - id: landcover-low-zoom
     geometry: polygon
     <<: *extents
