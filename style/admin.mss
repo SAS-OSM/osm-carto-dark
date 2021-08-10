@@ -477,7 +477,7 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
     text-dy: -10;
   }
 }
-/*
+
 #protected-areas-text[zoom >= 13][way_pixels > 192000] {
   text-name: "[name]";
   text-face-name: @book-fonts;
@@ -497,7 +497,7 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
   text-vertical-alignment: middle;
   text-dy: -10;
 }
-
+/*
 #protected-areas {
   [way_pixels > 750] {
     [zoom >= 9] {

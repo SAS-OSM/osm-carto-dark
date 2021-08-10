@@ -8,8 +8,8 @@
   [natural = 'glacier']::natural {
     [zoom >= 5] {
       line-width: 1.0;
-      line-color: @glacier-line;
-      polygon-fill: @glacier;
+      line-color: @glacier;
+      polygon-fill: @land-color;
       [zoom >= 10] {
         line-dasharray: 4,2;
         line-width: 1.5;
@@ -130,7 +130,7 @@
       background/line-join: miter;
       water/line-cap: butt;
       water/line-join: miter;
-      tunnelfill/line-color: #f3f7f7;
+      tunnelfill/line-color: @contrast-color;
       tunnelfill/line-width: 1;
       [zoom >= 14] { tunnelfill/line-width: 2; }
       [zoom >= 15] { tunnelfill/line-width: 3; }
@@ -153,11 +153,11 @@
       water/line-color: @water-color;
 
       [bridge = 'yes'] {
-        bridgecasing/line-color: black;
+        bridgecasing/line-color: @contrast-color;
         bridgecasing/line-join: round;
         bridgecasing/line-width: 4;
         [waterway = 'stream'][zoom >= 15] { bridgecasing/line-width: 4; }
-        bridgeglow/line-color: white;
+        bridgeglow/line-color: #000000;
         bridgeglow/line-join: round;
         bridgeglow/line-width: 3;
         [waterway = 'stream'][zoom >= 15] { bridgeglow/line-width: 3; }
@@ -187,7 +187,7 @@
         water/line-dasharray: 4,2;
         tunnelfill/line-width: 1;
         [waterway = 'stream'] { tunnelfill/line-width: 2; }
-        tunnelfill/line-color: #f3f7f7;
+        tunnelfill/line-color: @contrast-color;
       }
     }
   }

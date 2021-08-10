@@ -19,12 +19,12 @@
 @office: #4863A0;
 @man-made-icon: #999999;
 @advertising-grey: @man-made-icon;
-@barrier-icon: #3f3f3f;
+@barrier-icon: #ffffff;
 @landform-color: #d08f55;
 @leisure-green: #b0ffc4;
 @protected-area: @leisure-green;
 @aboriginal: #b89461;
-@religious-icon: #000000;
+@religious-icon: #ffffff;
 
 @landcover-font-size: 10;
 @landcover-wrap-width-size: 30; // 3 em
@@ -1550,7 +1550,7 @@
     [zoom >= 17] {
       marker-width: 3;
       marker-line-width: 0;
-      marker-fill: #7d7c7c;
+      marker-fill: @barrier-icon;
 
       [zoom >= 18] {
         marker-width: 4;
@@ -1593,7 +1593,7 @@
   [feature = 'place_islet'][zoom >= 11][way_pixels > 3000],
   [feature = 'place_islet'][zoom >= 17] {
     text-name: "[name]";
-    text-fill: #000;
+    text-fill: #ffffff;
     text-size: @landcover-font-size;
     text-wrap-width: @landcover-wrap-width-size;
     text-line-spacing: @landcover-line-spacing-size;
@@ -3040,10 +3040,10 @@
       text-face-name: @standard-font;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
-      [access != ''][access != 'permissive'][access != 'yes'] {
-        text-opacity: 0.33;
-        text-halo-radius: 0;
-      }
+//    [access != ''][access != 'permissive'][access != 'yes'] {
+//      text-opacity: 0.33;
+//      text-halo-radius: 0;
+//    }
       [feature = 'amenity_bicycle_parking'],
       [feature = 'amenity_motorcycle_parking'] { text-dy: 12; }
     }
@@ -3083,13 +3083,13 @@
   [feature = 'leisure_track'] {
     [zoom >= 16] {
       [zoom >= 17] {
-        bridgecasing/line-color: saturate(darken(@pitch, 30%), 20%);
+        bridgecasing/line-color: @pitch;
         bridgecasing/line-join: round;
         bridgecasing/line-width: 1.25;
         [zoom >= 18] { bridgecasing/line-width: 2.5; }
         [zoom >= 19] { bridgecasing/line-width: 5; }
       }
-      line-color: @pitch;
+      line-color: #000000;
       line-join: round;
       line-cap: round;
       line-width: 1;
@@ -3101,13 +3101,13 @@
   [feature = 'attraction_water_slide'] {
     [zoom >= 16] {
       [zoom >= 17] {
-        bridgecasing/line-color: black;
+        bridgecasing/line-color: @pitch;
         bridgecasing/line-join: round;
         bridgecasing/line-width: 1.25;
         [zoom >= 18] { bridgecasing/line-width: 2.5; }
         [zoom >= 19] { bridgecasing/line-width: 5; }
       }
-      line-color: @pitch;
+      line-color: #000000;
       line-join: round;
       line-cap: round;
       line-width: 1;
@@ -3147,7 +3147,7 @@
     text-halo-fill: @standard-halo-fill;
   }
 }
-
+/*
 #trees [zoom >= 16] {
   ::canopy {
     opacity: 0.3;
@@ -3206,3 +3206,4 @@
     }
   }
 }
+*/
