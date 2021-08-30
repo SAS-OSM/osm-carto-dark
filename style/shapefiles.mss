@@ -33,3 +33,8 @@
     }
   }
 }
+
+#coastlines {
+  line-width: 1;
+  line-color: @contrast-color;
+}

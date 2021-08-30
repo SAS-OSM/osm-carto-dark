@@ -5,7 +5,7 @@
 @service-fill: @residential-fill;
 @living-street-fill: #000000;
 @pedestrian-fill: #000000;
-@raceway-fill: #000000;
+@raceway-fill: pink;
 @road-fill: #000000;
 @footway-fill: #c28a8a;
 @footway-fill-noaccess: #bbbbbb;
@@ -1780,6 +1780,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [feature = 'highway_raceway'] {
       [zoom >= 12] {
         line-color: @raceway-fill;
+        line-opacity: .25;
         line-width: 1.2;
         line-join: round;
         line-cap: round;
@@ -2601,7 +2602,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 
   [feature = 'highway_service'] {
     [zoom >= 14] {
-      polygon-fill: #fff;
+      polygon-fill: #000000;
     }
   }
 
@@ -2622,10 +2623,12 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 
   [feature = 'aeroway_runway'][zoom >= 11] {
     polygon-fill: @runway-fill;
+    polygon-opacity: .25;
   }
 
   [feature = 'aeroway_taxiway'][zoom >= 13] {
     polygon-fill: @taxiway-fill;
+    polygon-opacity: .25;
   }
 
   [feature = 'aeroway_helipad'][zoom >= 16] {
@@ -2866,7 +2869,8 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         [zoom >= 18] { line-width: 24 + 2*@major-casing-width-z18; }
       }
       ::fill {
-        line-color: @land-color;
+        line-color: @runway-fill;
+        line-opacity: .25;
         line-width: 2;
         [zoom >= 12] { line-width: 4; }
         [zoom >= 13] { line-width: 6; }
@@ -2888,7 +2892,8 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         [zoom >= 18] { line-width: 8 + 2*@secondary-casing-width-z18; }
       }
       ::fill {
-        line-color: @land-color ;
+        line-color: @taxiway-fill;
+        line-opacity: .25;
         line-width: 1;
         [zoom >= 13] { line-width: 2; }
         [zoom >= 14] { line-width: 4; }
@@ -3243,7 +3248,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-clip: false;
       text-placement: line;
       text-halo-radius: @standard-halo-radius;
-      [highway = 'raceway'] { text-halo-fill: @raceway-fill; }
+      [highway = 'raceway'] { text-halo-fill: #000000; }
       [highway = 'service'] { text-halo-fill: @service-fill; }
       text-face-name: @book-fonts;
       text-repeat-distance: @major-highway-text-repeat-distance;

@@ -1,9 +1,10 @@
 @breakwater-color: #aaa; /* Also for groyne */
 @dam: #adadad;
-@dam-line: #444444;
+@dam-line: #999999;
 @weir-line: #aaa;
 @lock-gate: #aaa;
 @lock-gate-line: #aaa;
+@pier-color: @contrast-color;
 
 #water-barriers-point, #water-barriers-line, #water-barriers-poly {
   [waterway = 'dam'] {
@@ -12,7 +13,7 @@
       line-color: @dam-line;
       line-join: round;
       line-cap: round;
-      polygon-fill: @dam;
+      polygon-fill: @land-color;
     }
     #water-barriers-line[zoom >= 13] {
       line-width: 2;
@@ -67,11 +68,12 @@
 #piers-poly, #piers-line {
   [man_made = 'pier'][zoom >= 12] {
     #piers-poly {
-      polygon-fill: @land-color;
+      polygon-fill: @pier-color;
+      polygon-opacity: .25;
     }
     #piers-line {
       line-width: 0.5;
-      line-color: @land-color;
+      line-color: @pier-color;
       line-cap: square;
       [zoom >= 13] { line-width: 1; }
       [zoom >= 15] { line-width: 2; }
@@ -97,14 +99,14 @@
   [zoom >= 14] {
     a/line-width: 1;
     a/line-offset: -0.5;
-    a/line-color: blue;
-    a/line-opacity: 0.1;
+    a/line-color: #9999ff;
+    a/line-opacity: 0.25;
     a/line-join: round;
     a/line-cap: round;
     b/line-width: 3;
     b/line-offset: -1.5;
-    b/line-color: blue;
-    b/line-opacity: 0.1;
+    b/line-color: #9999ff;
+    b/line-opacity: 0.25;
     b/line-join: round;
     b/line-cap: round;
     [zoom >= 17] {
