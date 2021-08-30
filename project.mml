@@ -37,7 +37,7 @@ Stylesheet:
   - style/shapefiles.mss
   - style/landcover.mss
   - style/water.mss
-# - style/water-features.mss
+  - style/water-features.mss
   - style/road-colors-generated.mss
   - style/roads.mss
 # - style/power.mss
