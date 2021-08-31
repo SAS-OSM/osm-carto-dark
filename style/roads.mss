@@ -38,7 +38,7 @@
 @bridleway-casing: @default-casing;
 @track-casing: @default-casing;
 
-@tertiary-shield: #3b3b3b;
+@tertiary-shield: #ffffff;
 
 @unimportant-road: #4b4b4b;
 
