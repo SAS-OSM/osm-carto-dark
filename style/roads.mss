@@ -1,17 +1,17 @@
 /* For the main linear features, such as roads and railways. */
 
-@tertiary-fill: #000000;
-@residential-fill: #000000;
-@service-fill: @residential-fill;
-@living-street-fill: #000000;
-@pedestrian-fill: #000000;
+@tertiary-fill: #1b293f;
+@residential-fill: #1b293f;
+@service-fill: #1b293f;
+@living-street-fill: #1b293f;
+@pedestrian-fill: #1b293f;
 @raceway-fill: pink;
 @road-fill: #000000;
-@footway-fill: #c28a8a;
+@footway-fill: #212f44;
 @footway-fill-noaccess: #bbbbbb;
 @steps-fill: @footway-fill;
 @steps-fill-noaccess: #bbbbbb;
-@cycleway-fill: #8a93c2;
+@cycleway-fill: #212f44;
 @cycleway-fill-noaccess: #9999ff;
 @bridleway-fill:#00b300;
 @bridleway-fill-noaccess: #aaddaa;

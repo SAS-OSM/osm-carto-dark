@@ -2,8 +2,8 @@ Map {
   background-color: @land-color;
 }
 
-@water-color: #171717;
-@land-color: #000000;
+@water-color: #021f35;
+@land-color: #020e18;
 
 @standard-halo-radius: 3;
 @standard-halo-fill: rgba(0,0,0,0.5);
