@@ -70,7 +70,7 @@
 
 #landcover-low-zoom[zoom < 10],
 #landcover[zoom >= 10] {
-  ::low-zoom[zoom < 12] { image-filters: scale-hsla(0,1,0,1,0.2,1,0,1); }
+  ::low-zoom[zoom < 12] { image-filters: scale-hsla(0,1,0,1,0,1,0,1); }
   ::high-zoom[zoom >= 12]                 { image-filters: scale-hsla(0,1,0,1,0,  1,   0,1); }
 
   ::low-zoom[zoom < 12],
