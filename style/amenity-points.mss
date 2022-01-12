@@ -3,14 +3,14 @@
 @wetland-text: darken(#4aa5fa, 0%); /* Also for mud */
 @shop-icon: #b889b0;
 @shop-text: #b889b0;
-@transportation-icon: #619ebe;
-@transportation-text: #619ebe;
+@transportation-icon: #4a8d96;
+@transportation-text: #4a8d96;
 @accommodation-icon: @transportation-icon;
 @accommodation-text: @transportation-text;
 @airtransport: #ffffff; //also ferry_terminal
-@health-color: #ff6163;
-@amenity-brown: #af946a;
-@gastronomy-icon: #e18725;
+@health-color: #ab6753;
+@amenity-brown: #ad795c;
+@gastronomy-icon: #ad795c;
 //@gastronomy-text: darken(@gastronomy-icon, 5%);
 @gastronomy-text: darken(@gastronomy-icon, 0%);
 @memorials: @amenity-brown;
@@ -20,8 +20,8 @@
 @man-made-icon: #999999;
 @advertising-grey: @man-made-icon;
 @barrier-icon: #ffffff;
-@landform-color: #d08f55;
-@leisure-green: #b0ffc4;
+@landform-color: #ad795c;
+@leisure-green: #479c88;
 @protected-area: @leisure-green;
 @aboriginal: #b89461;
 @religious-icon: #ffffff;

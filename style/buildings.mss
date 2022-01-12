@@ -1,4 +1,4 @@
-@building-fill: #d9d0c9;  // Lch(84, 5, 68)
+@building-fill: #0c1821;  // Lch(84, 5, 68)
 @building-line: darken(@building-fill, 15%);  // Lch(70, 9, 66)
 @building-low-zoom: darken(@building-fill, 4%);
 
@@ -14,15 +14,15 @@
 #buildings {
 //[zoom >= 13] {
   [zoom >= 16] {
-    polygon-fill: @land-color;
+    polygon-fill: @building-fill;
 //  polygon-opacity: .25;
     polygon-clip: false;
-    line-color: @building-fill;
-    line-width: .5;
+//  line-color: @building-fill;
+    line-width: 0;
     line-clip: false;
     [zoom >= 17] {
 //    line-color: #808080;
-      line-width: .7;
+      line-width: 0;
 //    line-opacity: .25;
 //    line-clip: false;
     }

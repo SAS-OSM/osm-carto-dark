@@ -1,8 +1,8 @@
-@placenames: #ffffff;
-@placenames-light: #ffffff;
-@country-labels: #ffffff;
-@state-labels: #ffffff;
-@county-labels: #ffffff;
+@placenames: #9f9f9f;
+@placenames-light: #9f9f9f;
+@country-labels: #cacaca;
+@state-labels: #9f9f9f;
+@county-labels: #9f9f9f;
 
 #country-names {
   [zoom >= 3][zoom < 5][way_pixels > 1000],
