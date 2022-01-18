@@ -5,7 +5,7 @@
 @forest: #0b1f15;       // Lch(80,30,135)
 @forest-text: #479c88;  // Lch(40,30,135)
 @park: #0b1f12;         // Lch(94,30,145)
-@allotments: #c9e1bf;   // Lch(87,20,135)
+@allotments: #0c1a09;   // Lch(87,20,135)
 @orchard: #121a09; // also vineyard, plant_nursery
 @hedge: @forest;       // Lch(80,30,135)
 
@@ -29,7 +29,7 @@
 // --- Transport ----
 
 @transportation-area: @contrast-color;
-@apron: #dadae0;
+@apron: #292929;
 @garages: #dfddce;
 @parking: #eeeeee;
 @parking-outline: saturate(darken(@parking, 40%), 20%);
@@ -42,7 +42,7 @@
 @bare_ground: #eee5dc;
 @campsite: #def6c0; // also caravan_site, picnic_site
 @cemetery: #121a09; // also grave_yard
-@construction: #c7c7b4; // also brownfield
+@construction: #0c1a09; // also brownfield
 @heath: #d6d99f;
 @mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
 @place_of_worship: #d0d0d0; // also landuse_religious
@@ -410,9 +410,10 @@
   [feature = 'landuse_brownfield'],
   [feature = 'landuse_construction'] {
     [zoom >= 10] {
-      polygon-fill: @land-color;
-      line-color: @construction;
-      line-width: 0.3;
+      polygon-fill: @construction;
+//    line-color: @construction;
+//    line-width: 0.3;
+      line-width: 0;
     }
   }
 
@@ -566,9 +567,10 @@
   }
 */
   [feature = 'aeroway_apron'][zoom >= 10] {
-    polygon-fill: @land-color;
-    line-color: @apron;
-    line-width: 0.3;
+    polygon-fill: @apron;
+//  line-color: @apron;
+//  line-width: 0.3;
+    line-width: 0;
   }
 
   [feature = 'aeroway_aerodrome'][zoom >= 10],
