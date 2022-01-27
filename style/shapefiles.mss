@@ -1,7 +1,7 @@
 #necountries {
   [zoom >= 3] {
     line-width: 1;
-    line-color: @contrast-color;
+    line-color: #353b43;
     [zoom >= 10] { line-width: 3; }
   }
 }
@@ -32,9 +32,4 @@
       }
     }
   }
-}
-
-#coastlines {
-  line-width: 1;
-  line-color: @contrast-color;
 }

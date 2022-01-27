@@ -211,7 +211,7 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
 
   [admin_level = '4']::firstline {
     [zoom >= 6] {
-      line-color: @contrast-color;
+      line-color: @admin-boundaries;
       line-width: 1;
     }
     [zoom >= 8] {
@@ -243,7 +243,7 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
     [zoom >= 6] {
       background/line-width: 0.6;
       line-width: 0.6;
-      line-color: @contrast-color;
+      line-color: @admin-boundaries;
     }
     [zoom >= 7] {
       background/line-width: 0.8;
@@ -307,9 +307,9 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
       thin/line-dasharray: 16,4,3,4,3,4;
     }
   }
-  ::firstline { opacity: 0.5; }
-  ::wideline { opacity: 0.5; }
-  ::narrowline { opacity: 0.6; }
+  ::firstline { opacity: 1.0; }
+  ::wideline { opacity: 1.0; }
+  ::narrowline { opacity: 1.0; }
   /*
   The following code prevents admin boundaries from being rendered on top of
   each other. Comp-op works on the entire attachment, not on the individual
@@ -364,7 +364,7 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
     background/line-color: black;
     background/line-width: 2;
     line-join: bevel;
-    line-color: @contrast-color;
+    line-color: @admin-boundaries;
     line-width: 2;
     line-dasharray: 4,2,1,2;
     line-clip: false;
