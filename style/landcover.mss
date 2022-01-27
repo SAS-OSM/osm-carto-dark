@@ -1,12 +1,12 @@
 // --- Parks, woods, other green things ---
 
 @grass: #121a09;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
-@scrub: #c8d7ab;        // Lch(84,24,122)
+@scrub: @grass;        // Lch(84,24,122)
 @forest: #0b1f15;       // Lch(80,30,135)
 @forest-text: #479c88;  // Lch(40,30,135)
-@park: #0b1f12;         // Lch(94,30,145)
+@park: @grass;         // Lch(94,30,145)
 @allotments: #0c1a09;   // Lch(87,20,135)
-@orchard: #121a09; // also vineyard, plant_nursery
+@orchard: @grass; // also vineyard, plant_nursery
 @hedge: @forest;       // Lch(80,30,135)
 
 // --- "Base" landuses ---
@@ -41,8 +41,8 @@
 
 @bare_ground: #eee5dc;
 @campsite: #def6c0; // also caravan_site, picnic_site
-@cemetery: #121a09; // also grave_yard
-@construction: #0c1a09; // also brownfield
+@cemetery: @grass; // also grave_yard
+@construction: @allotments; // also brownfield
 @heath: #d6d99f;
 @mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
 @place_of_worship: #d0d0d0; // also landuse_religious
@@ -66,7 +66,7 @@
 @pitch: #aae0cb;           // Lch(85,22,168) also track
 @track: @pitch;
 @stadium: @leisure; // also sports_centre
-@golf_course: #121a09;
+@golf_course: @grass;
 
 #landcover-low-zoom[zoom < 10],
 #landcover[zoom >= 10] {
@@ -254,7 +254,7 @@
 
   [feature = 'leisure_dog_park'] {
     [zoom >= 10] {
-      polygon-fill: #121a09;
+      polygon-fill: @grass;
 //    line-color: @leisure;
       line-width: 0;
     }
@@ -756,7 +756,7 @@
     [leaf_type = "mixed"] { polygon-pattern-file: url('symbols/leaftype_mixed.svg'); }
     [leaf_type = "leafless"] { polygon-pattern-file: url('symbols/leaftype_leafless.svg'); }
     polygon-pattern-alignment: global;
-    opacity: 0.4; // The entire layer has opacity to handle overlapping forests
+    opacity: 0.2; // The entire layer has opacity to handle overlapping forests
   }
 }
 
