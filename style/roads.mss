@@ -7,11 +7,11 @@
 @pedestrian-fill: #1b293f;
 @raceway-fill: pink;
 @road-fill: #000000;
-@footway-fill: #2c3644;
+@footway-fill: #566170;
 @footway-fill-noaccess: #bbbbbb;
 @steps-fill: @footway-fill;
 @steps-fill-noaccess: #bbbbbb;
-@cycleway-fill: #2c3644;
+@cycleway-fill: #566170;
 @cycleway-fill-noaccess: #9999ff;
 @bridleway-fill:#00b300;
 @bridleway-fill-noaccess: #aaddaa;
@@ -2091,10 +2091,10 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       [zoom >= 12] {
         #roads-fill, #bridges {
           dark/line-join: round;
-          light/line-color: #000000;
+          light/line-color: #2c3644;
           light/line-join: round;
           [feature = 'railway_rail'] {
-            dark/line-color: #a6a8aa;
+            dark/line-color: #566170;
             dark/line-width: 2;
             light/line-width: 0.75;
             light/line-dasharray: 8,8;

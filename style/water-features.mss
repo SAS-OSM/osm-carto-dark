@@ -4,7 +4,7 @@
 @weir-line: #aaa;
 @lock-gate: #aaa;
 @lock-gate-line: #aaa;
-@pier-color: @contrast-color;
+@pier-color: #2c3644;
 
 #water-barriers-point, #water-barriers-line, #water-barriers-poly {
   [waterway = 'dam'] {
