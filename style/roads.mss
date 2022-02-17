@@ -1369,7 +1369,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         [zoom >= 11] { line-width: @motorway-width-z11; }
         [zoom >= 12] {
           line-color: @motorway-fill;
-          line-width: @motorway-width-z12;
+          line-width: @motorway-width-z12 - 2 * @major-casing-width-z12;
           [zoom >= 13] { line-width: @motorway-width-z13 - 2 * @major-casing-width-z13; }
           [zoom >= 15] { line-width: @motorway-width-z15 - 2 * @major-casing-width-z15; }
           [zoom >= 17] { line-width: @motorway-width-z17 - 2 * @major-casing-width-z17; }

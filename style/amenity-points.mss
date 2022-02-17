@@ -24,7 +24,7 @@
 @leisure-green: #479c88;
 @protected-area: @leisure-green;
 @aboriginal: #b89461;
-@religious-icon: #ffffff;
+@religious-icon: #929c9d;
 
 @landcover-font-size: 10;
 @landcover-wrap-width-size: 30; // 3 em
@@ -2279,7 +2279,7 @@
       [feature = 'landuse_cemetery'],
       [feature = 'amenity_grave_yard'] {
 //      text-fill: darken(@cemetery, 50%);
-        text-fill: darken(@cemetery, 0%);
+        text-fill: @address-color;
         text-halo-radius: @standard-halo-radius * 1.5; /* extra halo needed to overpower the cemetery polygon pattern */
       }
       [feature = 'landuse_residential'] {
@@ -2327,7 +2327,7 @@
       [feature = 'landuse_landfill'],
       [feature = 'landuse_construction'] {
 //      text-fill: darken(@construction, 50%);
-        text-fill: darken(@construction, 0%);
+        text-fill: @address-color;
       }
       [feature = 'tourism_caravan_site'] {
 //      text-fill: darken(@campsite, 50%);

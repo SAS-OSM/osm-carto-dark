@@ -45,7 +45,7 @@
 @construction: @allotments; // also brownfield
 @heath: #d6d99f;
 @mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
-@place_of_worship: #d0d0d0; // also landuse_religious
+@place_of_worship: @religious-icon; // also landuse_religious
 @place_of_worship_outline: darken(@place_of_worship, 30%);
 @leisure: lighten(@park, 5%);
 @power: darken(@industrial, 5%);
@@ -99,7 +99,7 @@
   [feature = 'tourism_caravan_site'],
   [feature = 'tourism_picnic_site'] {
     [zoom >= 10] {
-      polygon-fill: #0d24d2;
+      polygon-fill: @forest;
       [zoom >= 13] {
         line-color: @campsite;
         line-width: 0.3;
