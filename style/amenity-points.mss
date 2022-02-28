@@ -2871,8 +2871,8 @@
         text-wrap-width: @landcover-wrap-width-size-bigger;
         text-line-spacing: @landcover-line-spacing-size-bigger;
       }
-//    text-fill: darken(@apron, 60%);
-      text-fill: darken(@apron, 0%);
+//    text-fill: darken(@address-color, 60%);
+      text-fill: darken(@address-color, 0%);
       text-face-name: @landcover-face-name;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
