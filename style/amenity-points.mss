@@ -16,7 +16,7 @@
 @memorials: @amenity-brown;
 @culture: @amenity-brown;
 @public-service: @amenity-brown;
-@office: #4863A0;
+@office: @address-color;
 @man-made-icon: #999999;
 @advertising-grey: @man-made-icon;
 @barrier-icon: #ffffff;
@@ -2871,8 +2871,8 @@
         text-wrap-width: @landcover-wrap-width-size-bigger;
         text-line-spacing: @landcover-line-spacing-size-bigger;
       }
-//    text-fill: darken(@address-color, 60%);
-      text-fill: darken(@address-color, 0%);
+//    text-fill: darken(#acacac 60%);
+      text-fill: darken(#acacac, 0%);
       text-face-name: @landcover-face-name;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
