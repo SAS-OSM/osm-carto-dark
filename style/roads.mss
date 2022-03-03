@@ -285,7 +285,7 @@
 
 @junction-text-color:             #960000;
 @halo-color-for-minor-road:       @contrast-color;
-@lowzoom-halo-color:              @contrast-color;
+@lowzoom-halo-color:              @motorway-fill;
 @lowzoom-halo-width:              0;
 
 @motorway-oneway-arrow-color:     darken(@motorway-casing, 0%);
@@ -1099,6 +1099,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 #tunnels[zoom >= 10] {
 
   ::halo {
+    
     [zoom = 9][feature = 'highway_secondary'] {
       line-color: @halo-color-for-minor-road;
       line-width: 2.2;
