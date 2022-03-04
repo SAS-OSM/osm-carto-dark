@@ -17,9 +17,9 @@
 @primary-low-zoom: #1c222b;
 @secondary-low-zoom: #1c222b;
 @motorway-low-zoom-casing: @motorway-casing;
-@trunk-low-zoom-casing: @trunk-fill;
-@primary-low-zoom-casing: @primary-fill;
-@secondary-low-zoom-casing: @secondary-fill;
+@trunk-low-zoom-casing: @trunk-casing;
+@primary-low-zoom-casing: @primary-casing;
+@secondary-low-zoom-casing: @secondary-casing;
 @motorway-shield: #ffffff;
 @trunk-shield: #ffffff;
 @primary-shield: #ffffff;

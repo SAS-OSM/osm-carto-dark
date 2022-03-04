@@ -25,8 +25,8 @@
 @access-marking-living-street: #cccccc;
 
 @default-casing: white;
-@tertiary-casing: @contrast-color;
-@residential-casing: @contrast-color;
+@tertiary-casing: @tertiary-fill;
+@residential-casing: @residential-fill;
 @road-casing: @residential-casing;
 @service-casing: @residential-casing;
 @living-street-casing: @residential-casing;
@@ -1103,7 +1103,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [zoom = 9][feature = 'highway_secondary'] {
       line-color: @halo-color-for-minor-road;
       line-width: 2.2;
-      line-opacity: 0.4;
+      //line-opacity: 0.4;
       line-join: round;
       //Missing line-cap: round; is intentional. It would cause rendering glow multiple times in some places - what as result of partial transparency would cause differences in rendering
       //Also, bridges - including bridge casings - are rendered on top of roads. Enabling line-cap: round would result in glow from bridges rendered on top of road around bridges.
@@ -1112,7 +1112,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [zoom = 11][feature = 'highway_secondary'] {
       line-color: @halo-color-for-minor-road;
       line-width: 2.7;
-      line-opacity: 0.4;
+      //line-opacity: 0.4;
       line-join: round;
       //Missing line-cap: round; is intentional. It would cause rendering glow multiple times in some places - what as result of partial transparency would cause differences in rendering
       //Also, bridges - including bridge casings - are rendered on top of roads. Enabling line-cap: round would result in glow from bridges rendered on top of road around bridges.
@@ -1122,7 +1122,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     [zoom = 12][feature = 'highway_unclassified'] {
       line-color: @halo-color-for-minor-road;
       line-width: 2.2;
-      line-opacity: 0.3;
+      //line-opacity: 0.3;
       line-join: round;
       //Missing line-cap: round; is intentional. It would cause rendering glow multiple times in some places - what as result of partial transparency would cause differences in rendering
       //Also, bridges - including bridge casings are rendered on top of roads. Enabling line-cap: round would result in glow from bridges rendered on top of road around bridges.
@@ -1157,7 +1157,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
         [zoom >= 11] { line-width: @primary-width-z11 + 2 * @lowzoom-halo-width; }
       }
       line-color: @lowzoom-halo-color;
-      line-opacity: .4;
+      //line-opacity: .4;
     }
     line-width: 0;
   }
