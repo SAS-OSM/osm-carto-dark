@@ -284,7 +284,7 @@
 @paths-tunnel-casing-width:       1;
 
 @junction-text-color:             #960000;
-@halo-color-for-minor-road:       @contrast-color;
+@halo-color-for-minor-road:       @primary-fill;
 @lowzoom-halo-color:              @motorway-fill;
 @lowzoom-halo-width:              0;
 
