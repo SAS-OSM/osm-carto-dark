@@ -214,7 +214,7 @@
 
   [feature = 'amenity_prison'][zoom >= 10][way_pixels > 75] {
     polygon-fill: @land-color;
-    line-color: #888;
+  //line-color: #888;
     line-width: 3;
   }
 
