@@ -19,7 +19,7 @@
 @office: @address-color;
 @man-made-icon: #999999;
 @advertising-grey: @man-made-icon;
-@barrier-icon: #ffffff;
+@barrier-icon: #566170;
 @landform-color: #ad795c;
 @leisure-green: #479c88;
 @protected-area: @leisure-green;
