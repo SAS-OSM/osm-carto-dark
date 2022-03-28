@@ -482,9 +482,11 @@
   }
 
   [feature = 'natural_sand'][zoom >= 10] {
-    polygon-fill: @land-color;
+  //polygon-fill: @land-color;
     line-color: @sand;
-    line-width: 0.3;
+    polygon-fill: #242001;
+  //line-width: 0.3;
+    line-width: 0;
   }
 
   [feature = 'natural_heath'][zoom >= 10] {
