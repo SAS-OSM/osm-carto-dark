@@ -2366,7 +2366,7 @@
       [feature = 'leisure_sports_centre'],
       [feature = 'leisure_stadium'] {
 //      text-fill: darken(@stadium, 70%);
-        text-fill: darken(@stadium, 0%);
+        text-fill: darken(@address-color, 0%);
       }
       [feature = 'leisure_fitness_centre'],
       [feature = 'leisure_fitness_station'] {
