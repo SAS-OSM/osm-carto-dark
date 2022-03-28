@@ -288,20 +288,20 @@
 @lowzoom-halo-color:              @motorway-fill;
 @lowzoom-halo-width:              0;
 
-@motorway-oneway-arrow-color:     darken(@motorway-casing, 0%);
-@trunk-oneway-arrow-color:        darken(@trunk-casing, 0%);
-@primary-oneway-arrow-color:      darken(@primary-casing, 0%);
-@secondary-oneway-arrow-color:    darken(@secondary-casing, 0%);
-@tertiary-oneway-arrow-color:     darken(@tertiary-casing, 0%);
-@residential-oneway-arrow-color:  #ffffff;
-@living-street-oneway-arrow-color: #ffffff;
-@pedestrian-oneway-arrow-color:   darken(@pedestrian-casing, 0%);
-@raceway-oneway-arrow-color:      pink;
-@footway-oneway-arrow-color:      darken(@footway-fill, 0%);
-@steps-oneway-arrow-color:        darken(@steps-fill, 0%);
-@cycleway-oneway-arrow-color:     darken(@cycleway-fill, 0%);
-@track-oneway-arrow-color:        darken(@track-fill, 0%);
-@bridleway-oneway-arrow-color:    darken(@bridleway-fill, 0%);
+@motorway-oneway-arrow-color:     @religious-icon;
+@trunk-oneway-arrow-color:        @religious-icon;
+@primary-oneway-arrow-color:      @religious-icon;
+@secondary-oneway-arrow-color:    @religious-icon;
+@tertiary-oneway-arrow-color:     @religious-icon;
+@residential-oneway-arrow-color:  @religious-icon;
+@living-street-oneway-arrow-color:@religious-icon;
+@pedestrian-oneway-arrow-color:   @religious-icon;
+@raceway-oneway-arrow-color:      @religious-icon;
+@footway-oneway-arrow-color:      @religious-icon;
+@steps-oneway-arrow-color:        @religious-icon;
+@cycleway-oneway-arrow-color:     @religious-icon;
+@track-oneway-arrow-color:        @religious-icon;
+@bridleway-oneway-arrow-color:    @religious-icon;
 
 // Shield’s line wrap is based on OpenStreetMap data and not on line-wrap-width,
 // but lines are typically rather short, so we use narrow line spacing.
