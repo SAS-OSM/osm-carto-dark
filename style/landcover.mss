@@ -656,8 +656,9 @@
   }
 
   [feature = 'leisure_pitch'][zoom >= 10] {
-    polygon-fill: @land-color;
-    line-width: 0.5;
+    polygon-fill: @pitch;
+    //line-width: 0.5;
+    line-width: 0;
     line-color: @pitch;
   }
 }
