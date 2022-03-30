@@ -40,7 +40,7 @@
 
 @tertiary-shield: #ffffff;
 
-@unimportant-road: #4b4b4b;
+@unimportant-road: #1c222b;
 
 @minor-construction: #aaa;
 @service-construction: #aaa;
