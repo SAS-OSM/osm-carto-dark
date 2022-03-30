@@ -21,7 +21,7 @@
 @runway-fill: @aeroway-fill;
 @taxiway-fill: @aeroway-fill;
 @helipad-fill: @aeroway-fill;
-@access-marking: @contrast-color;
+@access-marking: @footway-fill;
 @access-marking-living-street: #cccccc;
 
 @default-casing: white;
