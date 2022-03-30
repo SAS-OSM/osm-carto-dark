@@ -753,6 +753,7 @@
     [natural = 'scrub'] {
       polygon-pattern-file: url('symbols/scrub.png');
       polygon-pattern-alignment: global;
+      polygon-pattern-opacity: .5;
     }
   }
 
