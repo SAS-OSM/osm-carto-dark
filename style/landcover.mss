@@ -709,6 +709,7 @@
     [int_wetland = 'wet_meadow'] {
       polygon-pattern-file: url('symbols/wetland_marsh.png');
       polygon-pattern-alignment: global;
+      polygon-pattern-opacity: .5;
     }
     [int_wetland = 'reedbed'] {
       polygon-pattern-file: url('symbols/wetland_reed.png');
