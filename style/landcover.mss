@@ -552,7 +552,7 @@
   [feature = 'amenity_school'],
   [feature = 'amenity_kindergarten'] {
     [zoom >= 13] {
-      polygon-fill: @building-fill;
+      polygon-fill: #1e2a33;
       line-color: #e0dbc6;
       line-width: 0;
     }
