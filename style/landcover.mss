@@ -719,16 +719,19 @@
     [int_wetland = 'mangrove'] {
       polygon-pattern-file: url('symbols/wetland_mangrove.png');
       polygon-pattern-alignment: global;
+      polygon-pattern-opacity: .5;
     }
     [int_wetland = 'swamp'] {
       polygon-pattern-file: url('symbols/wetland_swamp.png');
       polygon-pattern-alignment: global;
+      polygon-pattern-opacity: .5;
     }
     [int_wetland = 'bog'],
     [int_wetland = 'fen'],
     [int_wetland = 'string_bog'] {
       polygon-pattern-file: url('symbols/wetland_bog.png');
       polygon-pattern-alignment: global;
+      polygon-pattern-opacity: .5;
     }
     [landuse = 'salt_pond'] {
       polygon-pattern-file: url('symbols/salt_pond.png');
