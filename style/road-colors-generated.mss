@@ -20,7 +20,7 @@
 @trunk-low-zoom-casing: @trunk-casing;
 @primary-low-zoom-casing: @primary-low-zoom;
 @secondary-low-zoom-casing: @secondary-low-zoom;
-@motorway-shield: red;
+@motorway-shield: #ffffff;
 @trunk-shield: #ffffff;
 @primary-shield: #ffffff;
 @secondary-shield: #ffffff;
