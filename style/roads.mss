@@ -3113,9 +3113,9 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
       text-repeat-distance: @major-highway-text-repeat-distance;
       [tunnel = 'no'] {
         text-halo-radius: @standard-halo-radius;
-        [highway = 'motorway'] { text-halo-fill: @motorway-fill; }
-        [highway = 'trunk'] { text-halo-fill: @trunk-fill; }
-        [highway = 'primary'] { text-halo-fill: @primary-fill; }
+        [highway = 'motorway'] { text-halo-fill: @standard-halo-fill; }
+        [highway = 'trunk'] { text-halo-fill: @standard-halo-fill; }
+        [highway = 'primary'] { text-halo-fill: @standard-halo-fill; }
       }
     }
     [zoom >= 14] {
