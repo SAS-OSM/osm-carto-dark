@@ -152,7 +152,7 @@
   [feature = 'leisure_garden'] {
     [zoom >= 10] {
       polygon-fill: @grass;
-      polygon-opacity: .15;
+//    polygon-opacity: .15;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
