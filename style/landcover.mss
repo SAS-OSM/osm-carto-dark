@@ -477,7 +477,8 @@
     [zoom >= 10] {
       polygon-fill: @land-color;
       line-color: @bare_ground;
-      line-width: 0.3;
+  //  line-width: 0.3;
+      line-width: 0;
     }
   }
 

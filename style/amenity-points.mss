@@ -3019,7 +3019,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: @tourism;
+    text-fill: #a76a9a;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-face-name: @standard-font;
@@ -3089,7 +3089,7 @@
         [zoom >= 18] { bridgecasing/line-width: 2.5; }
         [zoom >= 19] { bridgecasing/line-width: 5; }
       }
-      line-color: #000000;
+      line-color: @grass;
       line-join: round;
       line-cap: round;
       line-width: 1;
@@ -3107,7 +3107,7 @@
         [zoom >= 18] { bridgecasing/line-width: 2.5; }
         [zoom >= 19] { bridgecasing/line-width: 5; }
       }
-      line-color: #000000;
+      line-color: @leisure-green;
       line-join: round;
       line-cap: round;
       line-width: 1;
