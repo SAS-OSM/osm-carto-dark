@@ -2128,7 +2128,7 @@
       }
     }
   }
-/*
+
   [feature = 'military_danger_area'][is_building = 'no'] {
     [zoom >= 9][way_pixels > 3000],
     [zoom >= 17] {
@@ -2153,7 +2153,7 @@
       text-halo-fill: @standard-halo-fill;
     }
   }
-*/
+
   [feature = 'landuse_garages'][is_building = 'no'] {
     [zoom >= 13][way_pixels > 3000],
     [zoom >= 17] {
