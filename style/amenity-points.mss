@@ -3147,10 +3147,10 @@
     text-halo-fill: @standard-halo-fill;
   }
 }
-/*
+
 #trees [zoom >= 16] {
   ::canopy {
-    opacity: 0.3;
+    opacity: 0.1;
     [natural = 'tree_row'] {
       line-color: #00e600;
       line-cap: round;
@@ -3206,4 +3206,4 @@
     }
   }
 }
-*/
+
