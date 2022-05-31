@@ -833,7 +833,8 @@
   [feature = 'barrier_city_wall'] {
     [zoom >= 15] {
       line-width: 1;
-      line-color: lighten(#444, 30%);
+      //line-color: lighten(#444, 30%);
+      line-color: @apron;
     }
     [zoom >= 16] {
       line-width: 1.5;
@@ -841,7 +842,8 @@
     [zoom >= 17] {
       line-width: 2;
       barrier/line-width: 0.4;
-      barrier/line-color: #444;
+      //barrier/line-color: #444;
+      barrier/line-color: @apron;
     }
     [zoom >= 18] {
       line-width: 3;
