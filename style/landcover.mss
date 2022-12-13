@@ -52,7 +52,7 @@
 @power-line: darken(@industrial-line, 5%);
 @sand: #f5e9c6;
 @societal_amenities: #a68e71;   // Lch(99,13,109)
-@tourism: @campsite;
+@tourism: #a76a9a;
 @quarry: #c5c3c3;
 @military: #ab6753;
 @beach: #fff1ba;
