@@ -2383,12 +2383,12 @@
       }
       [feature = 'leisure_track'] {
 //      text-fill: darken(@track, 40%);
-        text-fill: darken(@track, 0%);
+        text-fill: darken(@leisure-green, 0%);
       }
       [feature = 'leisure_ice_rink'],
       [feature = 'leisure_pitch'] {
 //     text-fill: darken(@pitch, 40%);
-       text-fill: darken(@pitch, 0%);
+       text-fill: darken(@leisure-green, 0%);
       }
     }
   }
