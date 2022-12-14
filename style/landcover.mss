@@ -88,10 +88,11 @@
   [feature = 'landuse_recreation_ground'][zoom >= 10],
   [feature = 'leisure_playground'][zoom >= 13],
   [feature = 'leisure_fitness_station'][zoom >= 13] {
-    polygon-fill: @land-color;
+    polygon-fill: @leisure;
     [zoom >= 15] {
-      line-color: @leisure;
-      line-width: 0.3;
+//    line-color: @leisure;
+//    line-width: 0.3;
+      line-width: 0;
     }
   }
 
@@ -213,9 +214,10 @@
   }
 
   [feature = 'amenity_prison'][zoom >= 10][way_pixels > 75] {
-    polygon-fill: @land-color;
+    polygon-fill: #1e2a33;
   //line-color: #888;
-    line-width: 3;
+  //line-width: 3;
+    line-width: 0;
   }
 
 /*
@@ -235,9 +237,9 @@
   }
 */
   [feature = 'landuse_garages'][zoom >= 13] {
-    polygon-fill: @land-color;
-    line-color: @garages;
-    line-width: 0.3;
+    polygon-fill: #1f2021;
+  //line-color: @garages;
+  //line-width: 0.3;
   }
 
   [feature = 'leisure_park'] {
@@ -336,8 +338,9 @@
   [feature = 'landuse_meadow'][zoom >= 5],
   [feature = 'landuse_grass'][zoom >= 5],
   [feature = 'landuse_village_green'][zoom >= 5] {
-    polygon-fill: @land-color;
-    line-color: @grass;
+    polygon-fill: @grass;
+  //line-color: @grass; 
+    line-width: 0;
   }
 
   [feature = 'landuse_retail'],
@@ -405,8 +408,9 @@
 
   [feature = 'landuse_railway'][zoom >= 10] {
     [zoom >= 16][name != ''] {
-      polygon-fill: @land-color;
-      line-width: 0.7;
+      polygon-fill: @railway;
+    //line-width: 0.7;
+      line-width: 0;
       line-color: @railway;
     }
   }
@@ -467,23 +471,23 @@
   }
 
   [feature = 'natural_bare_rock'][zoom >= 10] {
-    polygon-fill: @land-color;
+    polygon-fill: @bare_ground;
     line-color: @bare_ground;
-    line-width: 0.3;
+//  line-width: 0.3;
+    line-width: 0;
   }
 
   [feature = 'natural_scree'],
   [feature = 'natural_shingle'] {
     [zoom >= 10] {
-      polygon-fill: @land-color;
+      polygon-fill: @bare_ground;
       line-color: @bare_ground;
-  //  line-width: 0.3;
+    //line-width: 0.3;
       line-width: 0;
     }
   }
 
   [feature = 'natural_sand'][zoom >= 10] {
-  //polygon-fill: @land-color;
     line-color: @sand;
     polygon-fill: #242001;
   //line-width: 0.3;
@@ -491,15 +495,17 @@
   }
 
   [feature = 'natural_heath'][zoom >= 10] {
-    polygon-fill: @land-color;
+    polygon-fill: @heath;
     line-color: @heath;
-    line-width: 0.3;
+  //line-width: 0.3;
+    line-width: 0;
   }
 
   [feature = 'natural_scrub'][zoom >= 10] {
-    polygon-fill: @land-color;
+    polygon-fill: @scrub;
     line-color: @scrub;
-    line-width: 0.3;
+  //line-width: 0.3;
+    line-width: 0;
   }
 
   [feature = 'wetland_swamp'][zoom >= 10] {
@@ -509,9 +515,10 @@
   }
 
   [feature = 'wetland_mangrove'][zoom >= 10] {
-    polygon-fill: @land-color;
+    polygon-fill: @scrub;
     line-color: @scrub;
-    line-width: 0.3;
+  //line-width: 0.3;
+    line-width: 0;
   }
 
   [feature = 'wetland_reedbed'][zoom >= 10] {
@@ -523,9 +530,10 @@
   [feature = 'wetland_bog'],
   [feature = 'wetland_string_bog'] {
     [zoom >= 10] {
-      polygon-fill: @land-color;
+      polygon-fill: @heath;
       line-color: @heath;
-      line-width: 0.3;
+    //line-width: 0.3;
+      line-width: 0;
     }
   }
 
@@ -628,9 +636,10 @@
   [feature = 'highway_services'],
   [feature = 'highway_rest_area'] {
     [zoom >= 10] {
-      polygon-fill: @land-color;
+      polygon-fill: @rest_area;
       line-color: @rest_area;
-      line-width: 0.3;
+    //line-width: 0.3;
+      line-width: 0;
     }
   }
 
@@ -651,8 +660,9 @@
   }
 
   [feature = 'leisure_track'][zoom >= 10] {
-    polygon-fill: @land-color;
-    line-width: 0.5;
+    polygon-fill: @track;
+  //line-width: 0.5;
+    line-width: 0;
     line-color: @track;
   }
 
