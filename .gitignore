@@ -9,6 +9,8 @@ localconfig.json
 localconfig.js
 .kosmtik-config.yml
 .DS_Store
+mapnik.xml~
+tmpproject.mml
 
 # Generated at runtime by Python.
 *.pyc
