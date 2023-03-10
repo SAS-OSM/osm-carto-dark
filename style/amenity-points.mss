@@ -706,8 +706,9 @@
   }
 
   [feature = 'amenity_toilets'] {
-    [access = 'yes'][zoom >= 18],
-    [zoom >= 19] {
+  //[access = 'yes'][zoom >= 18],
+  //[zoom >= 19] {
+    [zoom >= 18] {
       marker-file: url('symbols/amenity/toilets.svg');
       marker-fill: @amenity-brown;
       marker-clip: false;
