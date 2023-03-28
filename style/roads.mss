@@ -1068,7 +1068,7 @@
       #bridges {
         [zoom >= 14] {
           line-width: 4;
-          line-color: #00000;
+          line-color: #000000;
           line-join: round;
         }
       }
