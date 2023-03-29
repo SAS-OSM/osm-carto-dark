@@ -3,7 +3,7 @@
 @grass: #121a09;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
 @scrub: @grass;        // Lch(84,24,122)
 @forest: #0b1f15;       // Lch(80,30,135)
-@forest-text: #479c88;  // Lch(40,30,135)
+@forest-text: #75998d;  // Lch(40,30,135)
 @park: @grass;         // Lch(94,30,145)
 @allotments: #0c1a09;   // Lch(87,20,135)
 @orchard: @grass; // also vineyard, plant_nursery
@@ -51,10 +51,10 @@
 @power: darken(@industrial, 5%);
 @power-line: darken(@industrial-line, 5%);
 @sand: #f5e9c6;
-@societal_amenities: #a68e71;   // Lch(99,13,109)
+@societal_amenities: #968a69;   // Lch(99,13,109)
 @tourism: #a76a9a;
 @quarry: #c5c3c3;
-@military: #ab6753;
+@military: #a38a72;
 @beach: #fff1ba;
 @wastewater_plant: @industrial;
 @wastewater_plant-line: @industrial-line;

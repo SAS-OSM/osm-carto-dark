@@ -3,25 +3,26 @@
 @wetland-text: darken(#4aa5fa, 0%); /* Also for mud */
 @shop-icon: #b889b0;
 @shop-text: #b889b0;
-@transportation-icon: #4a8d96;
-@transportation-text: #4a8d96;
+@transportation-icon: #6c7c8f;
+@transportation-text: #6c7c8f;
 @accommodation-icon: @transportation-icon;
 @accommodation-text: @transportation-text;
 @airtransport: #ffffff; //also ferry_terminal
-@health-color: #ab6753;
-@amenity-brown: #ad795c;
-@gastronomy-icon: #ad795c;
+@health-icon: #727272;
+@health-text: #8f8f8f;
+@amenity-brown: #a37872;
+@gastronomy-icon: #a37872;
 //@gastronomy-text: darken(@gastronomy-icon, 5%);
 @gastronomy-text: darken(@gastronomy-icon, 0%);
 @memorials: @amenity-brown;
 @culture: @amenity-brown;
 @public-service: @amenity-brown;
 @office: @address-color;
-@man-made-icon: #999999;
+@man-made-icon: #727272;
 @advertising-grey: @man-made-icon;
 @barrier-icon: #566170;
-@landform-color: #ad795c;
-@leisure-green: #479c88;
+@landform-color: #a37872;
+@leisure-green: #75998d;
 @protected-area: @leisure-green;
 @aboriginal: #b89461;
 @religious-icon: #929c9d;
@@ -573,7 +574,7 @@
   [feature = 'amenity_clinic'][zoom >= 17],
   [feature = 'amenity_doctors'][zoom >= 17] {
     marker-file: url('symbols/amenity/doctors.svg');
-    marker-fill: @health-color;
+    marker-fill: @health-icon;
     marker-clip: false;
   }
 
@@ -585,25 +586,25 @@
     [zoom >= 18] {
       marker-file: url('symbols/amenity/dentist.svg');
     }
-    marker-fill: @health-color;
+    marker-fill: @health-icon;
     marker-clip: false;
   }
 
   [feature = 'amenity_hospital'][zoom >= 15] {
     marker-file: url('symbols/amenity/hospital.svg');
-    marker-fill: @health-color;
+    marker-fill: @health-icon;
     marker-clip: false;
   }
 
   [feature = 'amenity_pharmacy'][zoom >= 17] {
     marker-file: url('symbols/amenity/pharmacy.svg');
-    marker-fill: @health-color;
+    marker-fill: @health-icon;
     marker-clip: false;
   }
 
   [feature = 'amenity_veterinary'][zoom >= 17] {
     marker-file: url('symbols/amenity/veterinary.svg');
-    marker-fill: @health-color;
+    marker-fill: @health-icon;
     marker-clip: false;
   }
 
@@ -1815,7 +1816,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: #ffffff;
+    text-fill: #8f8f8f;
     text-dy: 12;
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
@@ -2580,7 +2581,7 @@
   [feature = 'amenity_hospital'][zoom >= 16],
   [feature = 'healthcare_hospital'][zoom >= 16] {
     text-name: "[name]";
-    text-fill: @health-color;
+    text-fill: @health-text;
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
@@ -2622,7 +2623,7 @@
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
       text-dy: 12;
-      text-fill: @health-color;
+      text-fill: @health-text;
       text-face-name: @standard-font;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
@@ -3020,7 +3021,7 @@
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
     text-line-spacing: @standard-line-spacing-size;
-    text-fill: #a76a9a;
+    text-fill: #8f8f8f;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
     text-face-name: @standard-font;

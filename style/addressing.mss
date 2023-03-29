@@ -1,6 +1,6 @@
 /* Features related to (postal) adresses: */
 
-@address-color: #7e7c67;
+@address-color: #a37872;
 
 #interpolation {
   [zoom >= 17] {

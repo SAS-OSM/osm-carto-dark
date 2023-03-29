@@ -1,6 +1,6 @@
-@station-color: #8f96bd;
+@station-color: #727272;
 //@station-text: darken(saturate(@station-color, 15%), 10%);
-@station-text: #8f96bd;
+@station-text: #6c7c8f;
 
 #stations {
   [railway = 'subway_entrance'][zoom >= 18] {
