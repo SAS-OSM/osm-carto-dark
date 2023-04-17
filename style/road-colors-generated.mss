@@ -8,11 +8,11 @@
 @trunk-casing: @motorway-casing;
 @primary-casing: @motorway-casing;
 @secondary-casing: @motorway-casing;
-@motorway-fill: #343c45;
+@motorway-fill: #2b323b;
 @trunk-fill: @motorway-fill;
 @primary-fill: @motorway-fill;
 @secondary-fill: @motorway-fill;
-@motorway-low-zoom: #343d47;
+@motorway-low-zoom: #2b323b;
 @trunk-low-zoom: #212a33;
 @primary-low-zoom: @trunk-low-zoom;
 @secondary-low-zoom: @primary-low-zoom;
