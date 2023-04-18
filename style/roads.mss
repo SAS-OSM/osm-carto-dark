@@ -395,7 +395,7 @@
     }
 
     [feature = 'highway_primary'] {
-      [zoom >= 10] {
+      [zoom >= 12] {
         line-color: @primary-low-zoom-casing;
         [zoom >= 13] {
           line-color: @primary-casing;
@@ -503,11 +503,9 @@
 
     [feature = 'highway_residential'],
     [feature = 'highway_unclassified'] {
-      [zoom >= 13] {
+      [zoom >= 15] {
         line-color: @residential-casing;
-        line-width: @residential-width-z13;
-        [zoom >= 14] { line-width: @residential-width-z14; }
-        [zoom >= 15] { line-width: @residential-width-z15; }
+        line-width: @residential-width-z15;
         [zoom >= 16] { line-width: @residential-width-z16; }
         [zoom >= 17] { line-width: @residential-width-z17; }
         [zoom >= 18] { line-width: @residential-width-z18; }
@@ -520,7 +518,7 @@
           line-dasharray: 4,2;
         }
         #bridges {
-          [zoom >= 14] {
+          [zoom >= 15] {
             line-color: @bridge-casing;
             line-join: round;
           }
