@@ -6,12 +6,12 @@
       line/line-width: 1;
       line/line-join: round;
       line/line-cap: round;
-      line/line-color: #808080;
+      line/line-color: #4c5a6b;
 
       dash/line-width: 3;
       dash/line-join: round;
       dash/line-cap: round;
-      dash/line-color: #ffffff;
+      dash/line-color: #36404d;
       dash/line-dasharray: 0.4,13;
       dash/line-clip: false;
     }
@@ -43,11 +43,11 @@
       line/line-width: 1;
       line/line-join: round;
       line/line-cap: round;
-      line/line-color: #808080;
+      line/line-color: #4c5a6b;
 
       dash/line-width: 4;
       dash/line-join: round;
-      dash/line-color: #ffffff;
+      dash/line-color: #36404d;
       dash/line-dasharray: 1,30;
       dash/line-clip: false;
     }

@@ -1,11 +1,11 @@
 // --- Parks, woods, other green things ---
 
-@grass: #121a09;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
+@grass: #172119;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
 @scrub: @grass;        // Lch(84,24,122)
-@forest: #0b1f15;       // Lch(80,30,135)
+@forest: #1d2623;       // Lch(80,30,135)
 @forest-text: #75998d;  // Lch(40,30,135)
 @park: @grass;         // Lch(94,30,145)
-@allotments: #0c1a09;   // Lch(87,20,135)
+@allotments: #242526;   // Lch(87,20,135)
 @orchard: @grass; // also vineyard, plant_nursery
 @hedge: @forest;       // Lch(80,30,135)
 
@@ -29,7 +29,7 @@
 // --- Transport ----
 
 @transportation-area: @contrast-color;
-@apron: #292929;
+@apron: #242526;
 @garages: #dfddce;
 @parking: #eeeeee;
 @parking-outline: saturate(darken(@parking, 40%), 20%);
@@ -77,7 +77,7 @@
   ::high-zoom[zoom >= 12] {
 
   [feature = 'leisure_swimming_pool'][zoom >= 14] {
-    polygon-fill: #11212e;
+    polygon-fill: #1b2026;
     [zoom >= 17] {
       line-width: 0;
 //    line-color: @water-color;
@@ -100,7 +100,7 @@
   [feature = 'tourism_caravan_site'],
   [feature = 'tourism_picnic_site'] {
     [zoom >= 10] {
-      polygon-fill: @forest;
+      polygon-fill: #1e2119;
       [zoom >= 13] {
         line-color: @campsite;
         line-width: 0.3;
@@ -214,10 +214,12 @@
   }
 
   [feature = 'amenity_prison'][zoom >= 10][way_pixels > 75] {
-    polygon-fill: #1e2a33;
-  //line-color: #888;
-  //line-width: 3;
-    line-width: 0;
+    polygon-fill: #242526;
+    line-color: #353738;
+    polygon-pattern-file: url('symbols/grey_vertical_hatch.png');
+    polygon-pattern-alignment: global;
+    polygon-pattern-opacity: .5;
+    line-width: 3;
   }
 
 /*
@@ -250,7 +252,7 @@
 
   [feature = 'leisure_ice_rink'][is_building = 'no'] {
     [zoom >= 10] {
-      polygon-fill: #11212e;
+      polygon-fill: #1b2026;
       line-width: 0;
 //    line-color: @glacier;
     }
@@ -418,12 +420,12 @@
   [feature = 'power_plant'][zoom >= 10],
   [feature = 'power_generator'][zoom >= 10],
   [feature = 'power_substation'][zoom >= 13] {
-    polygon-fill: @building-fill;
+    polygon-fill: #242526;
     [zoom >= 16] {
-      line-width: 0;
-      line-color: @industrial;
+      line-width: .5;
+      line-color: #3c3e40;
       [name != ''] {
-        line-width: 0;
+        line-width: .7;
       }
     }
   }
@@ -465,7 +467,7 @@
   }
 */
   [feature = 'landuse_salt_pond'][zoom >= 10] {
-    polygon-fill: @water-color;
+    polygon-fill: #1a222b;
 //  line-color: @water-color;
     line-width: 0;
   }
@@ -488,10 +490,9 @@
   }
 
   [feature = 'natural_sand'][zoom >= 10] {
-    line-color: @sand;
-    polygon-fill: #242001;
-  //line-width: 0.3;
-    line-width: 0;
+    line-color: #212930;
+    polygon-fill: #151a1f;
+    line-width: 0.3;
   }
 
   [feature = 'natural_heath'][zoom >= 10] {
@@ -572,9 +573,9 @@
   [feature = 'amenity_social_facility'],
   [feature = 'amenity_arts_centre'] {
     [zoom >= 13] {
-      polygon-fill: @building-fill;
-      line-width: 0;
-      line-color: @societal_amenities;
+      polygon-fill: #1b1e21;
+      line-width: 1;
+      line-color: #30343b;
     }
   }
 
@@ -582,13 +583,13 @@
   [feature = 'amenity_police'][zoom >= 8][way_pixels > 900],
   [feature = 'amenity_fire_station'][zoom >= 13],
   [feature = 'amenity_police'][zoom >= 13] {
-    polygon-fill: @building-fill;
-    line-color: #d1927b;
+    polygon-fill: #1b1e21;
+    line-color: #30343b;
 //  line-opacity: 0.24;
-    line-width: 0;
+    line-width: 1;
     line-offset: -0.5;
     [zoom >= 15] {
-      line-width: 0;
+    //line-width: 0;
       line-offset: -1.0;
     }
   }
@@ -628,7 +629,7 @@
 
   [feature = 'natural_beach'][zoom >= 10],
   [feature = 'natural_shoal'][zoom >= 10] {
-    polygon-fill: #242001;
+    polygon-fill: #21211f;
 //  line-color: @beach;
     line-width: 0;
   }
@@ -703,15 +704,16 @@
       }
     }
   }
-/*
+
   [int_wetland != null][zoom >= 10] {
     polygon-pattern-file: url('symbols/wetland.png');
     polygon-pattern-alignment: global;
+    polygon-pattern-opacity: .5;
   }
-*/
+
   [natural = 'reef'][zoom >= 10] {
     polygon-pattern-file: url('symbols/reef.png');
-    polygon-pattern-opacity: .2;
+    polygon-pattern-opacity: .5;
     polygon-pattern-alignment: global;
   }
   [zoom >= 13] {

@@ -4,7 +4,7 @@
 @residential-fill: #20252b;
 @service-fill: @motorway-fill;
 @living-street-fill: @residential-fill;
-@pedestrian-fill: @residential-fill;
+@pedestrian-fill: #1c2126;
 @raceway-fill: pink;
 @road-fill: @residential-fill;
 @footway-fill: #6d7e91;
@@ -30,7 +30,7 @@
 @road-casing: @residential-casing;
 @service-casing: @motorway-fill;
 @living-street-casing: @residential-casing;
-@pedestrian-casing: @residential-casing;
+@pedestrian-casing: #343c45;
 @path-casing: @default-casing;
 @footway-casing: #000000;
 @steps-casing: @default-casing;

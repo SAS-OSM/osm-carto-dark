@@ -1,18 +1,20 @@
 @water-text: #6b8cb2;
-@glacier: #032742;
-@glacier-line: #9cf;
+@glacier: #191f26;
+@glacier-line: #222a33;
 
 @waterway-text-repeat-distance: 200;
 
 #water-areas {
   [natural = 'glacier']::natural {
     [zoom >= 5] {
-      line-width: 1.0;
-      line-color: @glacier;
-      polygon-fill: @land-color;
-      [zoom >= 10] {
+     polygon-fill: @glacier;
+     [zoom >= 8] {
+        line-width: 0.5;
+        line-color: @glacier-line;
+      }
+      [zoom >= 11] {
         line-dasharray: 4,2;
-        line-width: 1.5;
+        line-width: 1;
       }
     }
   }
@@ -22,13 +24,16 @@
   [natural = 'water'],
   [landuse = 'reservoir'],
   [waterway = 'riverbank'] {
-    polygon-fill: @water-color;
-    line-width: 0;
-//  line-color: @contrast-color;
-    [zoom >= 0][way_pixels > 3000][way_pixels <= 768000],
-//  [zoom >= 14][way_pixels <= 768000] {
-    [zoom >= 14] {
-      line-width: .5;
+     [int_intermittent = 'no'] {
+      polygon-fill: @water-color;
+      [way_pixels >= 4] { polygon-gamma: 0.75; }
+      [way_pixels >= 64] { polygon-gamma: 0.6; }
+    }
+    [int_intermittent = 'yes'] {
+      polygon-pattern-file: url('symbols/intermittent_water.png');
+      polygon-pattern-opacity: .5;
+      [way_pixels >= 4] { polygon-pattern-gamma: 0.75; }
+      [way_pixels >= 64] { polygon-pattern-gamma: 0.6; }
     }
   }
 }

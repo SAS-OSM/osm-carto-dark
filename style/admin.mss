@@ -497,18 +497,16 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
   text-vertical-alignment: middle;
   text-dy: -10;
 }
-/*
+
 #protected-areas {
   [way_pixels > 750] {
-    [zoom >= 9] {
-      polygon-opacity: .15;
-      polygon-fill: #c7ffad;
-*/
-/*
+    [zoom >= 12] {
+    //polygon-opacity: .15;
+      polygon-fill: @land-color;
       // inner line
       ::wideline {
-        opacity: 0.15;
-        line-width: 3.6;
+        opacity: 0.5;
+        line-width: 1.5;
         // Unlike planet_osm_line, planet_osm_polygon does not preserves the
         // original direction of the OSM way: Following OGS at
         // https://www.opengeospatial.org/standards/sfa always at the left
@@ -516,9 +514,10 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
         // also applies to inner rings of multipolygons.) So a negative
         // line-offset is always an offset to the inner side of the polygon.
         line-offset: -0.9;
-        line-color: @protected-area;
+        line-color: #31403b;
         [boundary = 'aboriginal_lands'] {
-          line-color: @aboriginal;
+          line-color: #4d4531;
+          opacity: .6;
         }
         line-join: round;
         line-cap: round;
@@ -533,11 +532,10 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
       }
       // outer line
       ::narrowline {
-        opacity: 0.15;
-        line-width: 1.8;
-        line-color: @protected-area;
+        line-width: .75;
+        line-color: #31403b;
         [boundary = 'aboriginal_lands'] {
-          line-color: @aboriginal;
+          line-color: #4d4531;
         }
         line-join: round;
         line-cap: round;
@@ -545,12 +543,9 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
             line-width: 2;
         }
       }
-*/
-/*
     }
   }
 }
-*/
 
 #maritime-boundary[zoom >=6] {
   [admin_level = '2'] {

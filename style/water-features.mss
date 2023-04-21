@@ -1,5 +1,5 @@
 @breakwater-color: #aaa; /* Also for groyne */
-@dam: #adadad;
+@dam: #1f2329;
 @dam-line: #999999;
 @weir-line: #aaa;
 @lock-gate: #aaa;
@@ -9,11 +9,12 @@
 #water-barriers-point, #water-barriers-line, #water-barriers-poly {
   [waterway = 'dam'] {
     #water-barriers-poly[zoom >= 13] {
-      line-width: 2;
+    //line-width: 2;
+      line-width: 0;
       line-color: @dam-line;
       line-join: round;
       line-cap: round;
-      polygon-fill: @land-color;
+      polygon-fill: @dam;
     }
     #water-barriers-line[zoom >= 13] {
       line-width: 2;

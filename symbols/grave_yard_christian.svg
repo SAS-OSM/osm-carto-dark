@@ -32,7 +32,7 @@
      id="canvas"
      style="visibility:hidden;fill:none;stroke:none" />
   <path
-     style="opacity:1;fill:#88b78e;fill-opacity:1;fill-rule:evenodd"
+     style="opacity:1;fill:#9f9f9f;fill-opacity:1;fill-rule:evenodd"
      d="M 6,4 V 6 H 4 v 2 h 2 v 4 H 8 V 8 h 2 V 6 H 8 V 4 Z"
      id="christian" />
 </svg>
