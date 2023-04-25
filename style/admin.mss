@@ -501,8 +501,6 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
 #protected-areas {
   [way_pixels > 750] {
     [zoom >= 12] {
-    //polygon-opacity: .15;
-      polygon-fill: @land-color;
       // inner line
       ::wideline {
         opacity: 0.5;
