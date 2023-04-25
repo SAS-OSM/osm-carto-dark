@@ -12,9 +12,9 @@
 @trunk-fill: @motorway-fill;
 @primary-fill: #2a3138;
 @secondary-fill: @primary-fill;
-@motorway-low-zoom: #2b323b;
+@motorway-low-zoom: #28323b;
 @trunk-low-zoom: @motorway-low-zoom;
-@primary-low-zoom: #212a33;
+@primary-low-zoom: #1e252e;
 @secondary-low-zoom: @primary-low-zoom;
 @motorway-low-zoom-casing: @motorway-casing;
 @trunk-low-zoom-casing: @trunk-casing;
