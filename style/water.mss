@@ -45,10 +45,12 @@
     [int_tunnel = 'no'] {
       [int_intermittent != 'yes'][zoom >= 14],
       [zoom >= 15] {
-        line-width: 2.5;
+      //line-width: 2.5;
+        line-width: 0;
         line-color: white;
         [waterway = 'stream'][zoom >= 15] {
-          line-width: 3.5;
+        //line-width: 3.5;
+          line-width: 0;
         }
         [int_intermittent = 'yes'] {
           line-dasharray: 4,3;
