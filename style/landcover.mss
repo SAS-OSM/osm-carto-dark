@@ -1,11 +1,11 @@
 // --- Parks, woods, other green things ---
 
-@grass: #172119;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
+@grass: #161a11;        // Lch(90,32,128) also grassland, meadow, village_green, garden, allotments
 @scrub: @grass;        // Lch(84,24,122)
-@forest: #1d2623;       // Lch(80,30,135)
+@forest: #171f1c;       // Lch(80,30,135)
 @forest-text: #75998d;  // Lch(40,30,135)
 @park: @grass;         // Lch(94,30,145)
-@allotments: #242526;   // Lch(87,20,135)
+@allotments: #1b1b1c;   // Lch(87,20,135)
 @orchard: @grass; // also vineyard, plant_nursery
 @hedge: @forest;       // Lch(80,30,135)
 
@@ -40,7 +40,7 @@
 // --- Other ----
 
 @bare_ground: #eee5dc;
-@campsite: #0d2420; // also caravan_site, picnic_site
+@campsite: #1c211f; // also caravan_site, picnic_site
 @cemetery: @grass; // also grave_yard
 @construction: @allotments; // also brownfield
 @heath: #d6d99f;
@@ -100,10 +100,11 @@
   [feature = 'tourism_caravan_site'],
   [feature = 'tourism_picnic_site'] {
     [zoom >= 10] {
-      polygon-fill: #1e2119;
+      polygon-fill: @campsite;
       [zoom >= 13] {
-        line-color: @campsite;
-        line-width: 0.3;
+      //line-color: @campsite;
+      //line-width: 0.3;
+      line-width: 0;
       }
     }
   }

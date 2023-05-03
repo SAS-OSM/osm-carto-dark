@@ -512,9 +512,9 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
         // also applies to inner rings of multipolygons.) So a negative
         // line-offset is always an offset to the inner side of the polygon.
         line-offset: -0.9;
-        line-color: #31403b;
+        line-color: #2b3330;
         [boundary = 'aboriginal_lands'] {
-          line-color: #4d4531;
+          line-color: #303326;
           opacity: .6;
         }
         line-join: round;
@@ -531,9 +531,9 @@ Then all three layers are added to the rendering with comp-op: lighten, so that 
       // outer line
       ::narrowline {
         line-width: .75;
-        line-color: #31403b;
+        line-color: #2b3330;
         [boundary = 'aboriginal_lands'] {
-          line-color: #4d4531;
+          line-color: #303326;
         }
         line-join: round;
         line-cap: round;
