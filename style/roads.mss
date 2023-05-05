@@ -7,11 +7,11 @@
 @pedestrian-fill: #1c2126;
 @raceway-fill: pink;
 @road-fill: @residential-fill;
-@footway-fill: #363e47;
+@footway-fill: #39424d;
 @footway-fill-noaccess: #bbbbbb;
 @steps-fill: @footway-fill;
 @steps-fill-noaccess: #bbbbbb;
-@cycleway-fill: #3d4752;
+@cycleway-fill: #414b57;
 @cycleway-fill-noaccess: #9999ff;
 @bridleway-fill: @cycleway-fill;
 @bridleway-fill-noaccess: #bbbbbb;
@@ -26,11 +26,11 @@
 
 @default-casing: white;
 @tertiary-casing: @tertiary-fill;
-@residential-casing: @motorway-fill;
+@residential-casing: #1b2129;
 @road-casing: @residential-casing;
-@service-casing: @motorway-fill;
+@service-casing: @residential-casing;
 @living-street-casing: @residential-casing;
-@pedestrian-casing: #343c45;
+@pedestrian-casing: @residential-casing;
 @path-casing: @default-casing;
 @footway-casing: #000000;
 @steps-casing: @default-casing;
