@@ -1,10 +1,10 @@
 /* For the main linear features, such as roads and railways. */
 
-@tertiary-fill: @secondary-fill;
-@residential-fill: #20252b;
+@tertiary-fill: #191f26;
+@residential-fill: #1b2129;
 @service-fill: @motorway-fill;
 @living-street-fill: @residential-fill;
-@pedestrian-fill: #1c2126;
+@pedestrian-fill: @residential-fill;
 @raceway-fill: pink;
 @road-fill: @residential-fill;
 @footway-fill: #39424d;

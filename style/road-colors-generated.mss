@@ -8,12 +8,12 @@
 @trunk-casing: #394657;
 @primary-casing: @motorway-casing;
 @secondary-casing: @motorway-casing;
-@motorway-fill: #2e353d;
-@trunk-fill: #28313d;
+@motorway-fill: #343c45;
+@trunk-fill: #252d38;
 @primary-fill: @trunk-fill;
 @secondary-fill: @trunk-fill;
 @motorway-low-zoom: #272e36;
-@trunk-low-zoom: #1e252e;
+@trunk-low-zoom: #191f26;
 @primary-low-zoom: @trunk-low-zoom;
 @secondary-low-zoom: #191f26;
 @motorway-low-zoom-casing: @motorway-low-zoom;
