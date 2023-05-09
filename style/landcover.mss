@@ -350,7 +350,7 @@
   [feature = 'shop_mall'],
   [feature = 'amenity_marketplace'] {
     [zoom >= 8] {
-      polygon-fill: @building-fill;
+      polygon-fill: #16191c;
       [zoom >= 12] { line-width: 0; line-color: @built-up-z12; }
       [zoom >= 13] { line-width: 0; line-color: @retail; }
       [zoom >= 16] {
