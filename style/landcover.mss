@@ -782,7 +782,7 @@
   [landuse = 'military'][zoom >= 8][way_pixels > 900],
   [landuse = 'military'][zoom >= 13],
   [military = 'danger_area'][zoom >= 9] {
-    polygon-fill: #7a941e;
+    polygon-fill: @forest;
     polygon-opacity: .1;
   }
 }
