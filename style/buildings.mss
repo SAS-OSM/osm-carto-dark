@@ -12,8 +12,7 @@
 @entrance-normal: @building-line;
 
 #buildings {
-//[zoom >= 13] {
-  [zoom >= 16] {
+  [zoom >= 13] {
     polygon-fill: @building-fill;
 //  polygon-opacity: .25;
     polygon-clip: false;
