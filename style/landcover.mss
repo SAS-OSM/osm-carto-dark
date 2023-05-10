@@ -122,11 +122,6 @@
   }
 */
   [feature = 'landuse_vineyard'] {
-    [zoom >= 5] {
-      polygon-fill: @orchard;
-      [way_pixels >= 4]  { polygon-gamma: 0.75; }
-      [way_pixels >= 64] { polygon-gamma: 0.3;  }
-    }
     [zoom >= 13] {
       polygon-pattern-file: url('symbols/vineyard.png');
       polygon-pattern-opacity: .2;
@@ -137,11 +132,6 @@
   }
 
   [feature = 'landuse_orchard'] {
-    [zoom >= 5] {
-      polygon-fill: @orchard;
-      [way_pixels >= 4]  { polygon-gamma: 0.75; }
-      [way_pixels >= 64] { polygon-gamma: 0.3;  }
-    }
     [zoom >= 13] {
       polygon-pattern-file: url('symbols/orchard.png');
       polygon-pattern-opacity: .2;
@@ -327,7 +317,7 @@
 
   [feature = 'landuse_farmland'],
   [feature = 'landuse_greenhouse_horticulture'] {
-    [zoom >= 5] {
+    [zoom >= 13] {
       polygon-fill: @farmland;
       line-color: @farmland;
       line-width: 0.3;
@@ -337,10 +327,10 @@
     }
   }
 
-  [feature = 'natural_grassland'][zoom >= 5],
-  [feature = 'landuse_meadow'][zoom >= 5],
-  [feature = 'landuse_grass'][zoom >= 5],
-  [feature = 'landuse_village_green'][zoom >= 5] {
+  [feature = 'natural_grassland'][zoom >= 13],
+  [feature = 'landuse_meadow'][zoom >= 13],
+  [feature = 'landuse_grass'][zoom >= 13],
+  [feature = 'landuse_village_green'][zoom >= 13] {
     polygon-fill: @grass;
   //line-color: @grass; 
     line-width: 0;
