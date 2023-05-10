@@ -2277,7 +2277,7 @@
       [feature = 'landuse_orchard'],
       [feature = 'landuse_plant_nursery'] {
 //      text-fill: darken(@orchard, 50%);
-        text-fill: darken(@orchard, 0%);
+        text-fill: @forest-text;
       }
       [feature = 'landuse_cemetery'],
       [feature = 'amenity_grave_yard'] {
