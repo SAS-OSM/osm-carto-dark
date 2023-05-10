@@ -215,8 +215,8 @@
   }
 
   [feature = 'amenity_prison'][zoom >= 10][way_pixels > 75] {
-    polygon-fill: #242526;
-    line-color: #353738;
+    polygon-fill: #202126;
+    line-color: #272829;
     polygon-pattern-file: url('symbols/grey_vertical_hatch.png');
     polygon-pattern-alignment: global;
     polygon-pattern-opacity: .5;
