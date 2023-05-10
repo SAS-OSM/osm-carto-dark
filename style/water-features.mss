@@ -1,6 +1,6 @@
 @breakwater-color: #aaa; /* Also for groyne */
 @dam: #1f2329;
-@dam-line: #999999;
+@dam-line: #2a3038;
 @weir-line: #aaa;
 @lock-gate: #aaa;
 @lock-gate-line: #aaa;
