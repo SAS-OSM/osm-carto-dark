@@ -44,7 +44,7 @@
 @cemetery: @grass; // also grave_yard
 @construction: @allotments; // also brownfield
 @heath: @grass;
-@mud: rgba(203,177,154,0.3); // produces #e6dcd1 over @land
+@mud: #1b1b1c; // produces #e6dcd1 over @land
 @place_of_worship: @religious-icon; // also landuse_religious
 @place_of_worship_outline: darken(@place_of_worship, 30%);
 @leisure: lighten(@park, 5%);
