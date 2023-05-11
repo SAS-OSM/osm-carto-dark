@@ -774,7 +774,7 @@
     [leaf_type = "mixed"] { polygon-pattern-file: url('symbols/leaftype_mixed.svg'); }
     [leaf_type = "leafless"] { polygon-pattern-file: url('symbols/leaftype_leafless.svg'); }
     polygon-pattern-alignment: global;
-    opacity: 0.5; // The entire layer has opacity to handle overlapping forests
+    //opacity: 0.5; // The entire layer has opacity to handle overlapping forests
   }
 }
 
