@@ -39,7 +39,7 @@
 
 // --- Other ----
 
-@bare_ground: #eee5dc;
+@bare_ground: #1f2833;
 @campsite: #1c211f; // also caravan_site, picnic_site
 @cemetery: @grass; // also grave_yard
 @construction: @allotments; // also brownfield
