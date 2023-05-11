@@ -26,7 +26,7 @@
 
 @default-casing: white;
 @tertiary-casing: @tertiary-fill;
-@residential-casing: #1b2129;
+@residential-casing: @residential-fill;
 @road-casing: @residential-casing;
 @service-casing: @residential-casing;
 @living-street-casing: @residential-casing;
