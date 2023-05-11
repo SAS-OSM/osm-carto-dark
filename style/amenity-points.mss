@@ -2339,7 +2339,7 @@
       }
       [feature = 'tourism_theme_park'],
       [feature = 'tourism_zoo'] {
-        text-fill: @tourism;
+        text-fill: #8f8f8f;
         text-face-name: @bold-fonts; /*rendered bold to improve visibility since theme parks tend to have crowded backgrounds*/
       }
       [feature = 'amenity_kindergarten'],
