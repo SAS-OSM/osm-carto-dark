@@ -2293,7 +2293,7 @@
       [feature = 'natural_grassland'],
       [feature = 'landuse_grass'] {
 //      text-fill: darken(@grass, 50%);
-        text-fill: darken(@grass, 0%);
+        text-fill: @forest-text;
       }
       [feature = 'landuse_allotments'] {
 //      text-fill: darken(@allotments, 50%);
