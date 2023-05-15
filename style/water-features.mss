@@ -1,4 +1,4 @@
-@breakwater-color: #aaa; /* Also for groyne */
+@breakwater-color: #191d21; /* Also for groyne */
 @dam: #1f2329;
 @dam-line: #2a3038;
 @weir-line: #aaa;
@@ -89,7 +89,7 @@
     }
     #piers-line {
       line-width: 1;
-      line-color: @breakwater-color;
+      line-color: #2a3138;
       [zoom >= 13] { line-width: 2; }
       [zoom >= 16] { line-width: 4; }
     }
