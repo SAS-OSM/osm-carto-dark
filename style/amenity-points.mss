@@ -2307,7 +2307,7 @@
       [feature = 'landuse_farmland'],
       [feature = 'landuse_greenhouse_horticulture'] {
 //      text-fill: darken(@farmland, 50%);
-        text-fill: darken(@farmland, 0%);
+        text-fill: darken(@forest-text, 0%);
       }
       [feature = 'shop'][shop = 'mall'],
       [feature = 'landuse_retail'] {
