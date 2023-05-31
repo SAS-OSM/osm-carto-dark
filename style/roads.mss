@@ -5,7 +5,7 @@
 @service-fill: @motorway-fill;
 @living-street-fill: @residential-fill;
 @pedestrian-fill: @residential-fill;
-@raceway-fill: pink;
+@raceway-fill: @residential-fill;
 @road-fill: @residential-fill;
 @footway-fill: #39424d;
 @footway-fill-noaccess: #bbbbbb;
