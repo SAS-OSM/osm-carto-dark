@@ -7,7 +7,7 @@
 @transportation-text: #6c7c8f;
 @accommodation-icon: @transportation-icon;
 @accommodation-text: @transportation-text;
-@airtransport: #ffffff; //also ferry_terminal
+@airtransport: #585858; //also ferry_terminal
 @health-icon: #727272;
 @health-text: #8f8f8f;
 @amenity-brown: #a37872;
@@ -1342,7 +1342,7 @@
   [feature = 'aeroway_helipad'][zoom >= 16] {
     marker-file: url('symbols/helipad.16.svg');
     marker-clip: false;
-    marker-fill: @airtransport;
+    marker-fill: #585858;
   }
 
   [feature = 'aeroway_aerodrome']['access' != 'private']['icao' != null]['iata' != null][zoom >= 10][zoom < 17],
@@ -1353,7 +1353,7 @@
     [way_pixels = null] {
       marker-file: url('symbols/aerodrome.12.svg');
       marker-clip: false;
-      marker-fill: @airtransport;
+      marker-fill: #585858;
 //    marker-line-color: #000000;
 //    marker-line-width: 2;
 //    marker-line-opacity: .75;
@@ -1363,7 +1363,7 @@
   [feature = 'amenity_ferry_terminal'][zoom >= 15] {
     marker-file: url('symbols/amenity/ferry.svg');
     marker-clip: false;
-    marker-fill: @airtransport;
+    marker-fill: #585858;
   }
 
   [feature = 'man_made_lighthouse'][zoom >= 15] {
