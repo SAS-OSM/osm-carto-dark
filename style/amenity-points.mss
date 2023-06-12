@@ -2192,7 +2192,7 @@
 //[feature = 'landuse_quarry'],
   [feature = 'landuse_vineyard'],
   [feature = 'landuse_orchard'],
-//[feature = 'landuse_plant_nursery'],
+  [feature = 'landuse_plant_nursery'],
   [feature = 'landuse_cemetery'],
   [feature = 'amenity_grave_yard'],
 //[feature = 'landuse_residential'],
