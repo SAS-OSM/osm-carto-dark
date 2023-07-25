@@ -2926,7 +2926,7 @@
         text-wrap-width: @landcover-wrap-width-size-bigger;
         text-line-spacing: @landcover-line-spacing-size-bigger;
       }
-      text-fill: mix(darken(@glacier, 40%), darken(@glacier-line, 30%), 50%);
+      text-fill: @water-text;
       text-face-name: @landcover-face-name;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
